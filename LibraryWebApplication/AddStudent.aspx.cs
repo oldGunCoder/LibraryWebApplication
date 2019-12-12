@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace LibraryWebApplication
 {
@@ -11,6 +7,39 @@ namespace LibraryWebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Page.IsPostBack)
+            {
+                lblResultMessage.Text = "";
+            }
+
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+            if (Page.IsValid)
+            {
+                BusinessLayer.Student student = new BusinessLayer.Student
+                {
+                    FirstName = txtFirstName.Text,
+                    LastName = txtLastName.Text,
+                    BirthDate = Convert.ToDateTime(txtBirthDate.Text),
+                    Gender = txtGender.Text,
+                    Class = txtClass.Text
+                };
+
+                int result = DataAccessLayer.UtilityTools.ExecuteInsert(student);
+
+                if (result == 1)
+                    lblResultMessage.Text = "Succesful submition!";
+                else if (result == 0)
+                    lblResultMessage.Text = "There was an error at the Database level";
+                else
+                    lblResultMessage.Text = "There was an error at the Method level";
+
+
+            }
+
 
         }
     }

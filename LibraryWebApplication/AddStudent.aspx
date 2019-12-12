@@ -11,23 +11,32 @@
         <div>
             <h2>Insert a new student record</h2>
             First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" Width="161px"></asp:TextBox>
+            <asp:TextBox ID="txtFirstName" runat="server" Width="161px"></asp:TextBox>
             <br />
             <br />
             Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox2" runat="server" Width="162px"></asp:TextBox>
+            <asp:TextBox ID="txtLastName" runat="server" Width="162px"></asp:TextBox>
             <br />
             <br />
             Birth Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox3" runat="server" Width="162px"></asp:TextBox>
+            <asp:TextBox ID="txtBirthDate" runat="server" Width="162px"></asp:TextBox>
             <br />
             <br />
             Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox4" runat="server" Width="78px"></asp:TextBox>
+            <asp:TextBox ID="txtGender" runat="server" Width="78px"></asp:TextBox>
             <br />
             <br />
             Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtClass" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <br />
+&nbsp;
+            <br />
+&nbsp;
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="84px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="lblResultMessage" runat="server"></asp:Label>
             <br />
             <br />
         </div>
