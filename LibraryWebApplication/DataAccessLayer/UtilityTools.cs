@@ -24,7 +24,7 @@ namespace LibraryWebApplication.BusinessLayer
                 try
                 {
                     //string sql = "INSERT INTO Registration (Name, Username, Password) VALUES (@Name,@Username,@Password)";
-                    string sql = "sp_InsertRegistrationInfo";
+                    string sql = "sp_InsertStudentInfo";
 
                     conn.Open();
 
@@ -37,13 +37,13 @@ namespace LibraryWebApplication.BusinessLayer
                         param[2] = new SqlParameter("@BirthDate", System.Data.SqlDbType.DateTime);
                         param[3] = new SqlParameter("@Gender", System.Data.SqlDbType.Char, 6);
                         param[4] = new SqlParameter("@Class", System.Data.SqlDbType.VarChar, 30);
-                        
+
                         param[0].Value = student.FirstName;
                         param[1].Value = student.LastName;
                         param[2].Value = student.BirthDate;
                         param[3].Value = student.Gender;
                         param[4].Value = student.Class;
-                        
+
 
                         foreach (SqlParameter p in param)
                         {
