@@ -11,7 +11,29 @@ namespace LibraryWebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(this.Page.IsPostBack)
+            {
+                this.lblResultMessageBorrow.Text = "";
+            }
+        }
 
+        protected void BorrowBook_Click(object sender, EventArgs e)
+        {
+            if(!this.Page.IsValid)
+            {
+                return;
+            }
+
+            int result = DataAccessLayer.UtilityToolsBorrowOrReturn.BorrowOrReturn(this.ddlStudentsBorrow.SelectedValue, this.ddlBooksAvailable.SelectedValue, "BorrowInsertOrUpdate");
+
+            if (result == 1)
+                this.lblResultMessageBorrow.Text = "Succesful submition!";
+            else if (result == 0)
+                this.lblResultMessageBorrow.Text = "There was an error at the Database level";
+            else
+                this.lblResultMessageBorrow.Text = "There was an error at the Method level";
+
+            Response.Redirect(Request.Url.ToString());
         }
     }
 }

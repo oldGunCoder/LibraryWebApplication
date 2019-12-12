@@ -7,5 +7,6 @@ namespace LibraryWebApplication.BusinessLayer
 {
     public class Type
     {
+        public string Name { get; set; }
     }
 }

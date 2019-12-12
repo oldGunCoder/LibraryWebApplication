@@ -100,6 +100,7 @@
     <Compile Include="BusinessLayer\Student.cs" />
     <Compile Include="BusinessLayer\Type.cs" />
     <Compile Include="DataAccessLayer\UtilityToolsBook.cs" />
+    <Compile Include="DataAccessLayer\UtilityToolsBorrowOrReturn.cs" />
     <Compile Include="DataAccessLayer\UtilityToolsStudent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnBook.aspx.cs">

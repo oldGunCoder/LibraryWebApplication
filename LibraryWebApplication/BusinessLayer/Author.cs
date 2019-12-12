@@ -7,5 +7,7 @@ namespace LibraryWebApplication.BusinessLayer
 {
     public class Author
     {
+        public string FristName { get; set; }
+        public string LastName { get; set; }
     }
 }

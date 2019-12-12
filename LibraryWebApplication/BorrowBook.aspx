@@ -35,8 +35,17 @@
             <br />
 &nbsp;&nbsp;
             <asp:Button ID="btnBorrow" runat="server" Text="Borrow the book" />
-            <br />
 &nbsp;&nbsp;
+            <asp:Label ID="lblResultMessageBorrow" runat="server"></asp:Label>
+            <br />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="AddNewBook" runat="server">Add new book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="ReturnBook" runat="server">Return book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
             <br />
         </div>
     </form>

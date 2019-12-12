@@ -15,7 +15,7 @@ namespace LibraryWebApplication.DataAccessLayer
             return System.Configuration.ConfigurationManager.ConnectionStrings["BookDB"].ConnectionString;
         }
 
-        public static int ExecuteInsertBook(Book book)
+        public static int ExecuteInsertBook(Book book, Author author, System.Type type)
         {
             SqlConnection conn;
             SqlCommand cmd;
@@ -43,9 +43,9 @@ namespace LibraryWebApplication.DataAccessLayer
                         param[0].Value = book.Title;
                         param[1].Value = book.PageCount;
                         param[2].Value = book.Price;
-                        param[3].Value = book.AuthorFirstName;
-                        param[4].Value = book.AuthorLastName;
-                        param[5].Value = book.TypeName;
+                        param[3].Value = author.FristName;
+                        param[4].Value = author.LastName;
+                        param[5].Value = type.Name;
 
                         foreach (SqlParameter p in param)
                         {
@@ -61,6 +61,11 @@ namespace LibraryWebApplication.DataAccessLayer
                     return ex.ErrorCode;
                 }
             }
+        }
+
+        internal static int ExecuteInsertBook(Book book, Author author, BusinessLayer.Type type)
+        {
+            throw new NotImplementedException();
         }
 
         public static object ExecuteSelect()
