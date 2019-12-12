@@ -20,8 +20,9 @@
             <br />
             <br />
 &nbsp;&nbsp;
-            <asp:DropDownList ID="ddlBooksAvailable" runat="server">
+            <asp:DropDownList ID="ddlBooksAvailable" runat="server" DataSourceID="BooksAvailable" DataTextField="Title" DataValueField="Title">
             </asp:DropDownList>
+            <asp:SqlDataSource ID="BooksAvailable" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryWebApplicationConnectionString %>" SelectCommand="SELECT [Title], [Name], [FirstName], [LastName] FROM [vw_BooksAvailable]"></asp:SqlDataSource>
             <br />
             <br />
 &nbsp;&nbsp;
@@ -40,11 +41,15 @@
             <br />
             <br />
             <br />
-&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="AddNewBook" runat="server">Add new book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:58708/AddBook.aspx">Add new book</a>
+            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="ReturnBook" runat="server">Return book</asp:HyperLink>
+            <a href="http://localhost:58708/AddStudent.aspx">Add new student</a>
+            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:58708/ReturnBook.aspx">Return book</a>
+            
 &nbsp;&nbsp;&nbsp;
             <br />
         </div>

@@ -49,6 +49,15 @@ namespace LibraryWebApplication {
         protected global::System.Web.UI.WebControls.DropDownList ddlBooksAvailable;
         
         /// <summary>
+        /// BooksAvailable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource BooksAvailable;
+        
+        /// <summary>
         /// cldrTakenDate control.
         /// </summary>
         /// <remarks>
@@ -74,23 +83,5 @@ namespace LibraryWebApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblResultMessageBorrow;
-        
-        /// <summary>
-        /// AddNewBook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink AddNewBook;
-        
-        /// <summary>
-        /// ReturnBook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink ReturnBook;
     }
 }

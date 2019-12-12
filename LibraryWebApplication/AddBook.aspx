@@ -51,12 +51,15 @@
             <asp:Label ID="lblResultMessageBook" runat="server"></asp:Label>
             <br />
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="AddNewStudent" runat="server">Add new student</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:58708/AddStudent.aspx">Add new student</a>
+            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="BorrowBook" runat="server">Borrow book</asp:HyperLink>
+            <a href="http://localhost:58708/BorrowBook.aspx">Borrow book</a>
+            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="ReturnBook" runat="server">Return book</asp:HyperLink>
+            <a href="http://localhost:58708/ReturnBook.aspx">Return book</a>
+            
 &nbsp;&nbsp;&nbsp;
             <br />
             <br />

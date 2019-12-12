@@ -38,11 +38,16 @@
             <br />
             <br />
             <br />
-&nbsp;<asp:HyperLink ID="AddNewBook" runat="server">Add new book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:58708/AddBook.aspx">Add new book</a>
+            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="BorrowBook" runat="server">Borrow book</asp:HyperLink>
+            <a href="http://localhost:58708/BorrowBook.aspx">Borrow book</a>
+            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:58708/AddStudent.aspx">Add new student</a>
+            
+&nbsp;&nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;
         </div>
