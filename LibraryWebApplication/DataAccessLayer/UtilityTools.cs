@@ -11,7 +11,7 @@ namespace LibraryWebApplication.BusinessLayer
     {
         public static string GetConnectionString()
         {
-            return System.Configuration.ConfigurationManager.ConnectionStrings["RegistrationDB"].ConnectionString;
+            return System.Configuration.ConfigurationManager.ConnectionStrings["StudentDB"].ConnectionString;
         }
 
         public static int ExecuteInsert(Student student)
