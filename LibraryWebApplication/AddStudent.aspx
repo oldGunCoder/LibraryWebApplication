@@ -34,12 +34,24 @@
 &nbsp;
             <br />
 &nbsp;
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="84px" />
+            <asp:Button ID="btnSubmitStudent" runat="server" Text="Submit" Width="84px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="lblResultMessage" runat="server"></asp:Label>
+            <asp:Label ID="lblResultMessageStudent" runat="server"></asp:Label>
+            <br />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="AddNewBook" runat="server">Add new book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="BorrowBook" runat="server">Borrow book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="ReturnBook" runat="server">Return book</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
             <br />
             <br />
         </div>
     </form>
+
+
 </body>
 </html>

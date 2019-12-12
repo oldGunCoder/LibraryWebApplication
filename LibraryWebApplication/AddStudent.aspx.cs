@@ -9,7 +9,7 @@ namespace LibraryWebApplication
         {
             if (Page.IsPostBack)
             {
-                lblResultMessage.Text = "";
+                lblResultMessageStudent.Text = "";
             }
 
         }
@@ -28,14 +28,14 @@ namespace LibraryWebApplication
                     Class = txtClass.Text
                 };
 
-                int result = BusinessLayer.UtilityTools.ExecuteInsert(student);
+                int result = DataAccessLayer.UtilityToolsStudent.ExecuteInsertStudent(student);
 
                 if (result == 1)
-                    lblResultMessage.Text = "Succesful submition!";
+                    lblResultMessageStudent.Text = "Succesful submition!";
                 else if (result == 0)
-                    lblResultMessage.Text = "There was an error at the Database level";
+                    lblResultMessageStudent.Text = "There was an error at the Database level";
                 else
-                    lblResultMessage.Text = "There was an error at the Method level";
+                    lblResultMessageStudent.Text = "There was an error at the Method level";
 
 
             }
