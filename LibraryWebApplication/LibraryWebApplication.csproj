@@ -99,7 +99,7 @@
     <Compile Include="BusinessLayer\Book.cs" />
     <Compile Include="BusinessLayer\Student.cs" />
     <Compile Include="BusinessLayer\Type.cs" />
-    <Compile Include="DataAccessLayer\UtilityTools.cs" />
+    <Compile Include="BusinessLayer\UtilityTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnBook.aspx.cs">
       <DependentUpon>ReturnBook.aspx</DependentUpon>
@@ -118,7 +118,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DataAccessLayer\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

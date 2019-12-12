@@ -28,7 +28,7 @@ namespace LibraryWebApplication
                     Class = txtClass.Text
                 };
 
-                int result = DataAccessLayer.UtilityTools.ExecuteInsert(student);
+                int result = BusinessLayer.UtilityTools.ExecuteInsert(student);
 
                 if (result == 1)
                     lblResultMessage.Text = "Succesful submition!";
