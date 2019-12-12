@@ -49,5 +49,9 @@ namespace LibraryWebApplication
 
         }
 
+        protected void btnSubmitBook_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

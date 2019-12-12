@@ -42,5 +42,10 @@ namespace LibraryWebApplication
 
 
         }
+
+        protected void btnSubmitStudent_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

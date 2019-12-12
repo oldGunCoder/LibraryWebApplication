@@ -15,7 +15,7 @@ namespace LibraryWebApplication.DataAccessLayer
             return System.Configuration.ConfigurationManager.ConnectionStrings["BookDB"].ConnectionString;
         }
 
-        public static int ExecuteInsertBook(Book book, Author author, System.Type type)
+        public static int ExecuteInsertBook(Book book, Author author, BusinessLayer.Type type)
         {
             SqlConnection conn;
             SqlCommand cmd;
@@ -24,8 +24,8 @@ namespace LibraryWebApplication.DataAccessLayer
             {
                 try
                 {
-                    //string sql = "INSERT INTO Registration (Name, Username, Password) VALUES (@Name,@Username,@Password)";
-                    string sql = "sp_InsertStudentInfo";
+                    
+                    string sql = "sp_InsertBookInfo";
 
                     conn.Open();
 
@@ -63,41 +63,41 @@ namespace LibraryWebApplication.DataAccessLayer
             }
         }
 
-        internal static int ExecuteInsertBook(Book book, Author author, BusinessLayer.Type type)
-        {
-            throw new NotImplementedException();
-        }
+        //internal static int ExecuteInsertBook(Book book, Author author, BusinessLayer.Type type)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public static object ExecuteSelect()
-        {
-            SqlConnection conn;
-            SqlCommand cmd;
+        //public static object ExecuteSelect()
+        //{
+        //    SqlConnection conn;
+        //    SqlCommand cmd;
 
-            using (conn = new SqlConnection(GetConnectionString()))
-            {
-                try
-                {
-                    string sql = "sp_SelectRegistrationInfo";
+        //    using (conn = new SqlConnection(GetConnectionString()))
+        //    {
+        //        try
+        //        {
+        //            string sql = "sp_SelectRegistrationInfo";
 
-                    conn.Open();
+        //            conn.Open();
 
-                    using (cmd = new SqlCommand(sql, conn))
-                    {
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        DataSet ds = new DataSet();
-                        da.Fill(ds);
+        //            using (cmd = new SqlCommand(sql, conn))
+        //            {
+        //                SqlDataAdapter da = new SqlDataAdapter(cmd);
+        //                DataSet ds = new DataSet();
+        //                da.Fill(ds);
 
-                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+        //                cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                        return ds;
+        //                return ds;
 
-                    }
-                }
-                catch (SqlException ex)
-                {
-                    throw ex;
-                }
-            }
-        }
+        //            }
+        //        }
+        //        catch (SqlException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //    }
+        //}
     }
 }

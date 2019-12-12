@@ -46,7 +46,7 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnSubmitBook" runat="server" Text="Submit" Width="117px" />
+            <asp:Button ID="btnSubmitBook" runat="server" Text="Submit" Width="117px" OnClick="btnSubmit_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblResultMessageBook" runat="server"></asp:Label>
             <br />

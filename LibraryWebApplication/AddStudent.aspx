@@ -34,7 +34,7 @@
 &nbsp;
             <br />
 &nbsp;
-            <asp:Button ID="btnSubmitStudent" runat="server" Text="Submit" Width="84px" />
+            <asp:Button ID="btnSubmitStudent" runat="server" Text="Submit" Width="84px" OnClick="btnSubmit_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="lblResultMessageStudent" runat="server"></asp:Label>
             <br />
