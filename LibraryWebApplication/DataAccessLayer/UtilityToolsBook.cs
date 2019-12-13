@@ -36,9 +36,9 @@ namespace LibraryWebApplication.DataAccessLayer
                         param[0] = new SqlParameter("@Title", System.Data.SqlDbType.VarChar, 30);
                         param[1] = new SqlParameter("@PageCount", System.Data.SqlDbType.Int);
                         param[2] = new SqlParameter("@Price", System.Data.SqlDbType.Decimal);
-                        param[3] = new SqlParameter("@AuthorFirstName", System.Data.SqlDbType.VarChar, 30);
-                        param[4] = new SqlParameter("@AuthorLastName", System.Data.SqlDbType.VarChar, 30);
-                        param[5] = new SqlParameter("@TypeName", System.Data.SqlDbType.VarChar, 30);
+                        param[3] = new SqlParameter("@FirstName", System.Data.SqlDbType.VarChar, 30);
+                        param[4] = new SqlParameter("@LastName", System.Data.SqlDbType.VarChar, 30);
+                        param[5] = new SqlParameter("@Name", System.Data.SqlDbType.VarChar, 30);
 
                         param[0].Value = book.Title;
                         param[1].Value = book.PageCount;

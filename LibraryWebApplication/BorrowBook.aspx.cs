@@ -17,7 +17,7 @@ namespace LibraryWebApplication
             }
         }
 
-        protected void BorrowBook_Click(object sender, EventArgs e)
+        protected void btnBorrow_Click(object sender, EventArgs e)
         {
             if(!this.Page.IsValid)
             {
@@ -34,6 +34,11 @@ namespace LibraryWebApplication
                 this.lblResultMessageBorrow.Text = "There was an error at the Method level";
 
             Response.Redirect(Request.Url.ToString());
+        }
+
+        protected void BtnBorrow_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -44,9 +44,9 @@ namespace LibraryWebApplication.DataAccessLayer
 
         }
 
-        private static string GetConnectionString()
+        public static string GetConnectionString()
         {
-            throw new NotImplementedException();
+            return System.Configuration.ConfigurationManager.ConnectionStrings["BookDB"].ConnectionString;
         }
     }
 }

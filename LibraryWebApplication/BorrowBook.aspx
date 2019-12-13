@@ -35,7 +35,7 @@
             <br />
             <br />
 &nbsp;&nbsp;
-            <asp:Button ID="btnBorrow" runat="server" Text="Borrow the book" />
+            <asp:Button ID="btnBorrow" runat="server" Text="Borrow the book" OnClick="btnBorrow_Click" />
 &nbsp;&nbsp;
             <asp:Label ID="lblResultMessageBorrow" runat="server"></asp:Label>
             <br />
