@@ -16,7 +16,7 @@
 &nbsp;&nbsp;
             <asp:DropDownList ID="ddlStudentsBorrow" runat="server" DataSourceID="Student" DataTextField="FirstName" DataValueField="LastName">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="Student" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryWebApplicationConnectionString %>" SelectCommand="SELECT [FirstName], [LastName] FROM [Student]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="Student" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryWebApplicationConnectionString %>" SelectCommand="SELECT [StudentId], [FirstName], [LastName] FROM [Student]"></asp:SqlDataSource>
             <br />
             <br />
 &nbsp;&nbsp;
